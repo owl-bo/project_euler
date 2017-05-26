@@ -10,7 +10,7 @@ Problem 1 「3と5の倍数」 †
 =end
 
 def calc(max_num)
-  (1..max_num-1).select { |num| num.modulo(3) == 0 || num.modulo(5) == 0  }.inject(&:+)
+  (1..max_num - 1).select { |num| num % 3 == 0 || num % 5 == 0 }.inject(&:+)
 end
 
 puts calc(1000)

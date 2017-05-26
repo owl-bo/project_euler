@@ -11,7 +11,7 @@ def calc(max_num)
   calc_num = 0
   loop do
     break if num[1] >= max_num
-    calc_num += num[1] if num.last % 2 == 0
+    calc_num += num[1] if num.last.even?
     next_num = num.inject(&:+)
     num[0] = num[1]
     num[1] = next_num
