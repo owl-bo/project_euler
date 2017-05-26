@@ -10,7 +10,7 @@ codes/以下に{0埋めされた四桁のコード番号}_{コード名}.rbと�
 =end
 
 class Code
-  BASEURL_GITHUB = 'https://github.com/owlworks/daily_quest/blob/master/codes/'
+  BASEURL_GITHUB = 'https://github.com/owlworks/project_euler/blob/master/codes/'
   CODE_TEMPLATE_FILE = './_code_template.txt'
   attr_accessor :file_name, :description, :number, :code_size
 

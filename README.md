@@ -32,5 +32,5 @@ https://github.com/cookpad/styleguide/blob/master/ruby.ja.md
   
 CodeSize: 126 byte  
   
-[Code](https://github.com/owlworks/daily_quest/blob/master/codes/001.rb "Code")  
+[Code](https://github.com/owlworks/project_euler/blob/master/codes/001.rb "Code")  
   
