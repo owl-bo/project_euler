@@ -1,0 +1,17 @@
+AsciiComments:
+  Enabled: false
+
+Lambda:
+  Enabled: false
+
+ClassAndModuleChildren:
+  Enabled: false
+
+AccessorMethodName:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false

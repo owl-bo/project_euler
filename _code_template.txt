@@ -1,0 +1,10 @@
+---
+
+\#\# #{@number} Day
+
+#{to_code_format(@description)}
+
+CodeSize: #{@code_size} byte
+
+#{link_to_code_page}
+  
