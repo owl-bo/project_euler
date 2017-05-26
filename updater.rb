@@ -17,7 +17,7 @@ class Code
   def initialize(file_path)
     @file_name = File.basename(file_path)
     @description = extract_description_from_file(file_path)
-    @number = @file_name.split('_').first
+    @number = @file_name[0..2]
   end
 
   def link_to_code_page

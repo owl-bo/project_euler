@@ -1,6 +1,6 @@
 ---
 
-\#\# #{@number} Day
+\#\# No. {@number}
 
 #{to_code_format(@description)}
 
