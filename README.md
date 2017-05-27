@@ -30,7 +30,7 @@ https://github.com/cookpad/styleguide/blob/master/ruby.ja.md
 >   
 > 同じようにして, 1000 未満の 3 か 5 の倍数になっている数字の合計を求めよ.  
   
-CodeSize: 126 byte  
+CodeSize: 115 byte  
   
 [Code](https://github.com/owlworks/project_euler/blob/master/codes/001.rb "Code")  
   
@@ -44,7 +44,20 @@ CodeSize: 126 byte
 > 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...  
 > 数列の項の値が400万以下の, 偶数値の項の総和を求めよ.  
   
-CodeSize: 239 byte  
+CodeSize: 236 byte  
   
 [Code](https://github.com/owlworks/project_euler/blob/master/codes/002.rb "Code")  
+  
+---  
+  
+## No. 003  
+  
+> Problem 3 「最大の素因数」 †  
+> 13195 の素因数は 5, 7, 13, 29 である.  
+>   
+> 600851475143 の素因数のうち最大のものを求めよ.  
+  
+CodeSize: 928 byte  
+  
+[Code](https://github.com/owlworks/project_euler/blob/master/codes/003.rb "Code")  
   
