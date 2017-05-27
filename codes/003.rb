@@ -14,11 +14,8 @@ def calc(target_num)
   max_prime = 0
   loop do
     factor = find_prime_factor(target_num)
-    if factor.nil?
-      max_prime = target_num if max_prime < target_num
-      break
-    end
-    max_prime = factor if max_prime < factor
+    max_prime = [(factor || target_num), max_prime].max
+    break if factor.nil?
     target_num /= factor
   end
   max_prime
@@ -38,32 +35,32 @@ end
 
 module Math
   class << self
-
     def find_factor_by_rho(n)
       i = 2
       loop do
         x = i**2 + 1 % n
-        y = (i/2)**2 + 1 % n
-        d = func_euclidean( (x-y).abs, n)
+        y = (i / 2)**2 + 1 % n
+        d = func_euclidean((x - y).abs, n)
         return nil if d == n
         return d if 1 < d && d < n
         i += 1
       end
     end
 
-    def func_euclidean(x,y)
+    def func_euclidean(x, y)
       # x >= y とする
-      y,x=x,y if x < y
+      y, x = x, y if x < y
       loop do
-        remainder = x%y
+        remainder = x % y
         break if remainder == 0
-        x,y = y,remainder
+        x = y
+        y = remainder
       end
       y
     end
   end
 end
 
-#puts find_prime_factor 150
-#puts calc 13195
+# puts find_prime_factor 150
+# puts calc 13195
 puts calc(600_851_475_143)
