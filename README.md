@@ -57,7 +57,20 @@ CodeSize: 236 byte
 >   
 > 600851475143 の素因数のうち最大のものを求めよ.  
   
-CodeSize: 928 byte  
+CodeSize: 892 byte  
   
 [Code](https://github.com/owlworks/project_euler/blob/master/codes/003.rb "Code")  
+  
+---  
+  
+## No. 004  
+  
+> Problem 4 「最大の回文積」 †  
+> 左右どちらから読んでも同じ値になる数を回文数という. 2桁の数の積で表される回文数のうち, 最大のものは 9009 = 91 × 99 である.  
+>   
+> では, 3桁の数の積で表される回文数の最大値を求めよ.  
+  
+CodeSize: 677 byte  
+  
+[Code](https://github.com/owlworks/project_euler/blob/master/codes/004.rb "Code")  
   
