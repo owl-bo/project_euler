@@ -10,29 +10,6 @@ Problem 3 「最大の素因数」 †
 ロー法で利用する最大公約数の算出にはユークリッドの互除法を使う.
 =end
 
-def calc(target_num)
-  max_prime = 0
-  loop do
-    factor = find_prime_factor(target_num)
-    max_prime = [(factor || target_num), max_prime].max
-    break if factor.nil?
-    target_num /= factor
-  end
-  max_prime
-end
-
-def find_prime_factor(num)
-  factor = Math.find_factor_by_rho num
-  loop do
-    # ロー法で得た因数は素数でないこともあるのでチェック
-    break if factor.nil?
-    result = Math.find_factor_by_rho factor
-    break if result.nil?
-    factor = result
-  end
-  factor
-end
-
 module Math
   class << self
     def find_factor_by_rho(n)
@@ -58,7 +35,30 @@ module Math
       end
       y
     end
+
+    def find_prime_factor(num)
+      factor = Math.find_factor_by_rho num
+      loop do
+        # ロー法で得た因数は素数でないこともあるのでチェック
+        break if factor.nil?
+        result = Math.find_factor_by_rho factor
+        break if result.nil?
+        factor = result
+      end
+      factor
+    end
   end
+end
+
+def calc(target_num)
+  max_prime = 0
+  loop do
+    factor = Math.find_prime_factor(target_num)
+    max_prime = [(factor || target_num), max_prime].max
+    break if factor.nil?
+    target_num /= factor
+  end
+  max_prime
 end
 
 # puts find_prime_factor 150

@@ -47,4 +47,3 @@ def search_cycling_num(start_num, end_num)
 end
 
 puts calc
-
