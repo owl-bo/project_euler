@@ -95,6 +95,19 @@ CodeSize: 109 byte
   
 ---  
   
+## No. 007  
+  
+> Problem 7 「10001番目の素数」 †  
+> 素数を小さい方から6つ並べると 2, 3, 5, 7, 11, 13 であり, 6番目の素数は 13 である.  
+>   
+> 10 001 番目の素数を求めよ.  
+  
+CodeSize: 269 byte  
+  
+[Code](https://github.com/owlworks/project_euler/blob/master/codes/007.rb "Code")  
+  
+---  
+  
 ## No. 008  
   
 > Problem 8 「数字列中の最大の積」 †  
