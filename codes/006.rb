@@ -17,9 +17,8 @@ x+yをx+y+zとしてもx,y,zの組合せについて2xy,2yz,2zxとなるので
 2(xy + yz+ zx)を求めればいい。
 =end
 
-
 def calc(max_num)
-  2 * [*1..max_num].combination(2).inject(0) { |sum, pair| sum + pair.inject(:*) }
+  2 * [*1..max_num].combination(2).inject(0) { |a, e| a + e.inject(:*) }
 end
 
 puts calc 100
