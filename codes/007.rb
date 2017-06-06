@@ -21,9 +21,9 @@ def calc(prime_no)
 end
 
 def is_prime?(num)
-  (2..num/2).each do |factor|
+  (2..num / 2).each do |factor|
     return false if num % factor == 0
   end
   true
 end
-puts calc(10001)
+puts calc(10_001)

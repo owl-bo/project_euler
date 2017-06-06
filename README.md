@@ -102,7 +102,7 @@ CodeSize: 109 byte
 >   
 > 10 001 番目の素数を求めよ.  
   
-CodeSize: 269 byte  
+CodeSize: 272 byte  
   
 [Code](https://github.com/owlworks/project_euler/blob/master/codes/007.rb "Code")  
   
@@ -258,6 +258,19 @@ CodeSize: 105 byte
   
 ---  
   
+## No. 015  
+  
+> Problem 15 「格子経路」 †  
+> 2×2 のマス目の左上からスタートした場合, 引き返しなしで右下にいくルートは 6 つある.  
+>   
+> では, 20×20 のマス目ではいくつのルートがあるか.  
+  
+CodeSize: 171 byte  
+  
+[Code](https://github.com/owlworks/project_euler/blob/master/codes/015.rb "Code")  
+  
+---  
+  
 ## No. 016  
   
 > Problem 16 「各位の数字の和」 †  
@@ -265,7 +278,7 @@ CodeSize: 105 byte
 >   
 > 同様にして, 2^1000 の各位の数字の和を求めよ.  
   
-CodeSize: 80 byte  
+CodeSize: 78 byte  
   
 [Code](https://github.com/owlworks/project_euler/blob/master/codes/016.rb "Code")  
   

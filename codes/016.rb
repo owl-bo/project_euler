@@ -6,7 +6,7 @@ Problem 16 「各位の数字の和」 †
 =end
 
 def calc(num)
-  (2 ** num).to_s.chars.map(&:to_i).inject(:+)
+  (2**num).to_s.chars.map(&:to_i).inject(:+)
 end
 
 puts calc 1000
