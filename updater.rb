@@ -57,6 +57,7 @@ end
 class Updater
   README_FILEPATH = './README.md'
   README_TEMPLATE_FILE = './_readme_template.txt'
+  ALL_PROBLEM_NUMS = 596
   attr_accessor :code_paths, :codes
   def initialize
     @code_paths = Dir.glob('./codes/*.rb')
@@ -81,6 +82,15 @@ class Updater
 
   def load_codes
     @codes = @code_paths.map { |path| Code.new(path) }
+  end
+
+  def project_progress_str
+    "#{@codes.count}/#{ALL_PROBLEM_NUMS}"
+  end
+
+  def skip_problems
+    problem_nums = @codes.map(&:number).map(&:to_i)
+    (1..problem_nums.max).reject { |num| problem_nums.include? num }.join(', ')
   end
 end
 

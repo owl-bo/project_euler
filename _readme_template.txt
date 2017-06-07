@@ -22,3 +22,6 @@ https://github.com/cookpad/styleguide/blob/master/ruby.ja.md
 より具体的にはこのレポジトリに含まれるrubocop設定ファイルによるrubocopをクリアすること。  
 
 #{codes}
+
+Progress: #{project_progress_str}
+Pending: #{skip_problems}

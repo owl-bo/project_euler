@@ -282,3 +282,6 @@ CodeSize: 78 byte
   
 [Code](https://github.com/owlworks/project_euler/blob/master/codes/016.rb "Code")  
   
+
+Progress: 10/596
+Pending: 5, 9, 10, 11, 12, 14
