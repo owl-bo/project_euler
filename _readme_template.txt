@@ -23,5 +23,9 @@ https://github.com/cookpad/styleguide/blob/master/ruby.ja.md
 
 #{codes}
 
-Progress: #{project_progress_str}
-Pending: #{skip_problems}
+---
+
+## 進捗
+
+Progress: #{project_progress_str}  
+Pending: #{skip_problems}  
